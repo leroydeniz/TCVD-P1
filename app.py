@@ -1,15 +1,16 @@
+import random
 import requests # para manejar las urls
 import pandas as pd # para manejo de dataframes
 from bs4 import BeautifulSoup
-from tqdm import tqdm
-from time import sleep
-headers = {'User-Agent': 'Mozilla/5.0'}
+from utils import *
+import time
 
 # Años donde buscar la información, 2010 se excluye por falta de datos
-years = [2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+#years = [2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+years = [2008]
 
 # DataFrame en pandas a rellenar
-df = pd.DataFrame(columns = ['Title', 'Link', 'Description', 'Image', 'Service', 'Year'])
+df = pd.DataFrame(columns = ['Title', 'Link', 'Description', 'Image', 'Year', 'Published'])
 
 # Enlaces a todos los proyectos donde recuperar la información
 projects = []
@@ -17,9 +18,22 @@ projects = []
 # Procesa año a año
 for year in years:
     print(f"Processing: {year}")
+
+    # Hará variar el tiempo de respuesta
+    t0 = time.time()
     
-    # A través de f-strings parametrizar la consulta para tomar cada una de las ediciones de los proyectos
-    page = requests.get(f'https://www.estudiantes.csic.edu.uy/category/proyectos-aprobados/proyectos-{year}/', headers = headers)
+    try:
+        # A través de f-strings parametrizar la consulta para tomar cada una de las ediciones de los proyectos
+        page = requests.get(f'https://www.estudiantes.csic.edu.uy/category/proyectos-aprobados/proyectos-{year}/', headers = {'User-Agent': get_header()})
+    except requests.exceptions.Timeout:
+        # Si cae el servidor o se demora, intenta con el siguiente
+        pass
+
+    # Mide el tiempo de respuesta
+    response_delay = time.time() - t0
+    
+    # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
+    time.sleep(0 * response_delay)
 
     # Obtener la información de cada url a visitar para tomar los datos
     soup = BeautifulSoup(page.content, "html.parser")
@@ -37,23 +51,50 @@ for year in years:
         print(e)
         pass
 
-# Cantidad de proyectos
-number_of_projects = len(projects)
-print(number_of_projects)
 
-'''# Rascar la información de cada uno de los proyectos partiendo del enlace
+# Rascar la información de cada uno de los proyectos partiendo del enlace
 for project in projects:
-    print(f"Processing: {project}")
-    page = requests.get(project, headers = headers)
+    print(f"\tProcessing: {project[0]}")
+    
+    # Hará variar el tiempo de respuesta
+    t0 = time.time()
+    i =  get_header()
+    print(i)
+    page = requests.get(project[0], headers = {'User-Agent': i})
+
+    # Mide el tiempo de respuesta
+    response_delay = time.time() - t0
+    
+    # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
+    time.sleep(0 * response_delay)
+
     soup = BeautifulSoup(page.content, "html.parser")
 
-    p_title = soup.h1.content
+    # Verifica que los campos tengan contenido, sino los pone a None
+    try:
+        p_title = soup.h1.string.strip()
+    except Exception as e:
+        p_title = None
+        
+    try:
+        p_description = soup.div(class_='post-content')[0].p.getText().strip()
+    except Exception as e:
+        p_description = None
+        
+    try:
+        image_path = soup.div(class_='post-content')[0].p.a['href'].strip()
+        p_image = load_requests(image_path).strip()
+    except Exception as e:
+        p_image = None
+        
+    try:
+        p_pub_date = soup.find('span', {'class': 'updated'}).text
+    except Exception as e:
+        p_pub_date = None
 
     # Añadir la nueva fila al dataframe
-    df = df.append({'Title': p_title, 'Link': project, 'Description': p_description, 'Image': p_image, 'Service': p_service, 'Year': p_year})
+    df = df.append({'Title': p_title, 'Link': project[0], 'Description': p_description, 'Image': p_image, 'Year': project[1], 'Published': p_pub_date}, ignore_index=True)
 
-print(df)'''
-
-'''# Barra de avance de proceso
-for i in tqdm(range(0, 100), total = 100, desc ="Processing"):
-    sleep(.1)'''
+# Crea el fichero CSV en el directorio output
+df.to_csv('output/paies.csv')
+print(df)
