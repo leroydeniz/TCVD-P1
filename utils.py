@@ -34,6 +34,4 @@ def get_header():
     headers_options = ['Mozilla/5.0', 'Chrome/42.0.2311.135', 'Safari/537.36', 'Edge/12.246', 'AppleWebKit/537.36']
 
     # Elige un tipo de cabecera aleatoria por llamada
-    i = random.choice(headers_options)
-
-    return i
+    return random.choice(headers_options)
