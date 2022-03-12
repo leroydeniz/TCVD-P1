@@ -6,8 +6,7 @@ from utils import *
 import time
 
 # Años donde buscar la información, 2010 se excluye por falta de datos
-#years = [2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
-years = [2008]
+years = [2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
 
 # DataFrame en pandas a rellenar
 df = pd.DataFrame(columns = ['Title', 'Link', 'Description', 'Image', 'Year', 'Published'])
@@ -33,7 +32,7 @@ for year in years:
     response_delay = time.time() - t0
     
     # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
-    time.sleep(0 * response_delay)
+    time.sleep(4 * response_delay)
 
     # Obtener la información de cada url a visitar para tomar los datos
     soup = BeautifulSoup(page.content, "html.parser")
@@ -58,15 +57,13 @@ for project in projects:
     
     # Hará variar el tiempo de respuesta
     t0 = time.time()
-    i =  get_header()
-    print(i)
-    page = requests.get(project[0], headers = {'User-Agent': i})
+    page = requests.get(project[0], headers = {'User-Agent': get_header()})
 
     # Mide el tiempo de respuesta
     response_delay = time.time() - t0
     
     # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
-    time.sleep(0 * response_delay)
+    time.sleep(6 * response_delay)
 
     soup = BeautifulSoup(page.content, "html.parser")
 
@@ -95,6 +92,6 @@ for project in projects:
     # Añadir la nueva fila al dataframe
     df = df.append({'Title': p_title, 'Link': project[0], 'Description': p_description, 'Image': p_image, 'Year': project[1], 'Published': p_pub_date}, ignore_index=True)
 
-# Crea el fichero CSV en el directorio output
+# Crea el fichero CSV en el directorio output-
 df.to_csv('output/paies.csv')
 print(df)
