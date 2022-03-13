@@ -12,6 +12,7 @@ Universitat Oberta de Catalunya <br/>
     <li><a href="#Ficheros-del-código-fuente">Ficheros del código fuente</a></li>    
     <li><a href="#Librerias">Librerias</a></li>
     <li><a href="#Ejecución">Ejecución</a></li>
+    <li><a href="#Datos-Obtenidos">Datos obtenidos</a></li>
     <li><a href="#Recursos">Recursos</a></li>
     <li><a href="#Licencia">Licencia</a></li>
   </ol>
@@ -69,6 +70,15 @@ El script se debe ejecutar de la siguiente manera:
 ```sh
 python app.py
 ```
+## Datos obtenidos
+Los campos que se han almacenado son los siguientes:
+* **Título:** identificador del proyecto y contextualizador general.
+* **Link:** permite el acceso directo al proyecto publicado.
+* **Description:** contenido relativo al proyecto y datos opcionales.
+* **Image:** póster asociado al trabajo donde puede extraerse información adicional.
+* **Year:** edición del proyecto donde fue financiado.
+* **Published:** año en que se publica en la página web desde donde se extrae.
+
 ## Recursos
 * Bianco, M., & Sutz, J. (2014). Veinte años de políticas de investigación en la Universidad de la República. Aciertos, dudas y aprendizajes (junio de 2014). TRILCE. Recuperado 13 de marzo de 2022, de https://www.csic.edu.uy/sites/csic/files/libro_veinte_anos_de_politicas_de_investigacion_en_la_universidad_de_la_republica.pdf <br/>
 * Creative Commons. (s. f.). Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Recuperado 13 de marzo de 2022, de https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES <br/>
