@@ -4,7 +4,7 @@ Máster en Ciencia de Datos<br/>
 Universitat Oberta de Catalunya <br/>
 
 ## Descripción
-Con esta práctica se pretende aplicar técnicas de web scraping mediante el lenguaje de programación Python para extraer así la información de los proyectos de investigación estudiantil de la Universidad de la República, principal institución educativa de alto nivel en Uruguay concentrando el 90% de la población universitaria.
+Con esta práctica se pretende aplicar técnicas de web scraping mediante el lenguaje de programación [Python](https://www.python.org/) para extraer así la información de los proyectos de investigación estudiantil de la Universidad de la República, principal institución educativa de alto nivel en Uruguay concentrando el 90% de la población universitaria.
 
 ## Miembros del equipo
 Leroy Deniz Pedreira <br/>
