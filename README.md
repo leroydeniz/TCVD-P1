@@ -10,13 +10,7 @@ Universitat Oberta de Catalunya <br/>
     <li>
       <a href="#Descripción">Descripción</a>      
     </li>
-    <li>
-      <a href="#Miembros-del-equipo">Miembros del equipo</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+    <li><a href="#Miembros-del-equipo">Miembros del equipo</a><li>
     <li><a href="#Ficheros-del-código-fuente">Ficheros del código fuente</a></li>
     <li><a href="#Recursos">Recursos</a></li>
     <li><a href="#Librerias">Librerias</a></li>
@@ -80,10 +74,11 @@ import os.path
 ```
 
 ## Ejecución
+El script se debe ejecutar de la siguiente manera:
 ```sh
 python app.py
 ```
 
 ## Licencia
 
- Realased UNder CC-BY-ND 4.0 Licence
+ Realased Under CC-BY-ND 4.0 Licence
