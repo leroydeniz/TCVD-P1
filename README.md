@@ -79,7 +79,7 @@ El script hace uso de las siguientes librerias:
  * time
  ```sh
 import time
-```
+  ```
  * os.path
  ```sh
 import os.path
@@ -87,3 +87,8 @@ import os.path
 
 ## Ejecución
 gem install github-markup
+
+
+## Licencia
+
+ licencia CC-BY-ND 4.0
