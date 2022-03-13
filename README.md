@@ -37,15 +37,19 @@ Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley
 ## Librerias
 El script se debe ejecutar de la siguiente manera
 
- - random
+ * random
   ```sh
-  npm install npm@latest -g
+  import random
   ```
- - requests 
- - pandas
- - BeautifulSoup
- - time
- - os.path
+ * requests.
+  Para instalar la libreria
+  ```sh
+  python -m pip install requests
+  ```
+ * pandas
+ * BeautifulSoup
+ * time
+ * os.path
 
 ## Ejecución
 gem install github-markup
