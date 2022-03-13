@@ -11,7 +11,7 @@ Leroy Deniz Pedreira <br/>
 David Muñoz Bertrán
 
 ## Ficheros del código fuente
-El proyecto se estructura de la siguiente manera:
+El proyecto se estructura de la siguiente manera: <br/>
 **TCVD-P1/:** Raíz principal del proyecto <br/>
 **TCVD-P1/img/:** Directorio donde se almacenan las imágenes de cada uno de los proyectos, si la contienen <br/>
 **TCVD-P1/output/:** Directorio donde se almacena el resultado final del proyecto <br/>
