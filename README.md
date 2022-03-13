@@ -8,7 +8,8 @@ Script que extrae la información de los proyectos de investigación estudiantil
 Leroy Deniz Pedreira <br/>
 David Muñoz Bertrán
 ## Ficheros del código fuente
-
+TCVD-P1/app.py: script principal desde donde se lanzan las instrucciones que dan lugar a la recolección de datos
+TCVD-P1/utils.py: 
 
 ## Recursos
 
@@ -18,6 +19,7 @@ David Muñoz Bertrán
  - pandas
  - BeautifulSoup
  - time
+ - os.path
 
 ## Ejecución
 x
