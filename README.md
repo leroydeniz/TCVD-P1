@@ -3,7 +3,7 @@ Tipología y Ciclo de Vida de los Datos<br/>
 Máster en Ciencia de Datos<br/>
 Universitat Oberta de Catalunya <br/>
 
-<!-- TABLE OF CONTENTS -->
+<!-- Tabla de contenidos -->
 <details>
   <summary>Indice</summary>
   <ol>
@@ -58,7 +58,7 @@ Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley
 • Tutorial de Github https://guides.github.com/activities/hello-world.
 
 ## Librerias
-El script se debe ejecutar de la siguiente manera
+El script hace uso de las siguientes librerias:
 
  * random
   ```sh
