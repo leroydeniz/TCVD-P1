@@ -11,10 +11,12 @@ Leroy Deniz Pedreira <br/>
 David Muñoz Bertrán
 
 ## Ficheros del código fuente
-**TCVD-P1/:** Raíz principal del proyecto
-TCVD-P1/img/:
-TCVD-P1/app.py: contiene las intrucciones necesarias para la recolección de datos <br/>
-TCVD-P1/utils.py: contiene las funciones reiterativas necesarias y accesibles de app.py
+**TCVD-P1/:** Raíz principal del proyecto <br/>
+**TCVD-P1/img/:** Directorio donde se almacenan las imágenes de cada uno de los proyectos si la tienen <br/>
+**TCVD-P1/output/:** Directorio donde se almacena el resultado final del proyecto <br/>
+**TCVD-P1/output/paies.csv:** Fichero .csv que contiene toda la información obtenida del scraping <br/>
+**TCVD-P1/app.py:** contiene las intrucciones necesarias para la recolección de datos <br/>
+**TCVD-P1/utils.py:** contiene las funciones reiterativas necesarias y accesibles de app.py
 
 ## Recursos
 
