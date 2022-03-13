@@ -17,12 +17,11 @@ Universitat Oberta de Catalunya <br/>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Ficheros-del-código-fuente">Ficheros del código fuente</a></li>
+    <li><a href="#Recursos">Recursos</a></li>
+    <li><a href="#Librerias">Librerias</a></li>
+    <li><a href="#Ejecución">Ejecución</a></li>
+    <li><a href="#Licencia">Licencia</a></li>
   </ol>
 </details>
 
