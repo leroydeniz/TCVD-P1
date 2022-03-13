@@ -23,8 +23,9 @@ Web de extracción:<br/>
 [PAIE](https://www.estudiantes.csic.edu.uy/)
 
 ## Miembros del equipo
-Leroy Deniz Pedreira <br/>
-David Muñoz Bertrán
+El equipo esta integrado por: 
+* Leroy Deniz Pedreira
+* David Muñoz Bertrán
 
 ## Ficheros del código fuente
 El proyecto se estructura de la siguiente manera: <br/>
