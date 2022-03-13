@@ -35,6 +35,8 @@ Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley
 • Tutorial de Github https://guides.github.com/activities/hello-world.
 
 ## Librerias
+El script se debe ejecutar de la siguiente manera
+
  - random
  - requests 
  - pandas
@@ -43,4 +45,4 @@ Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley
  - os.path
 
 ## Ejecución
-x
+gem install github-markup
