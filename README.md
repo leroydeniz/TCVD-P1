@@ -38,6 +38,9 @@ Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley
 El script se debe ejecutar de la siguiente manera
 
  - random
+  ```sh
+  npm install npm@latest -g
+  ```
  - requests 
  - pandas
  - BeautifulSoup
