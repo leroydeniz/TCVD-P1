@@ -26,12 +26,12 @@ David Muñoz Bertrán
 
 ## Ficheros del código fuente
 El proyecto se estructura de la siguiente manera: <br/>
-* TCVD-P1/: Raíz principal del proyecto <br/>
-**TCVD-P1/img/:** Directorio donde se almacenan las imágenes de cada uno de los proyectos, si la contienen <br/>
-**TCVD-P1/output/:** Directorio donde se almacena el resultado final del proyecto <br/>
-**TCVD-P1/output/paies.csv:** Fichero resultante .csv que contiene toda la información obtenida del scraping <br/>
-**TCVD-P1/app.py:** Contiene las intrucciones necesarias para la recolección de datos <br/>
-**TCVD-P1/utils.py:** Contiene las funciones reiterativas necesarias y accesibles desde app.py
+* **TCVD-P1/:** Raíz principal del proyecto <br/>
+* **TCVD-P1/img/:** Directorio donde se almacenan las imágenes de cada uno de los proyectos, si la contienen <br/>
+* **TCVD-P1/output/:** Directorio donde se almacena el resultado final del proyecto <br/>
+* **TCVD-P1/output/paies.csv:** Fichero resultante .csv que contiene toda la información obtenida del scraping <br/>
+* **TCVD-P1/app.py:** Contiene las intrucciones necesarias para la recolección de datos <br/>
+* **TCVD-P1/utils.py:** Contiene las funciones reiterativas necesarias y accesibles desde app.py
 
 ## Recursos
 • Bianco, M., & Sutz, J. (2014). Veinte años de políticas de investigación en la Universidad de la República. Aciertos, dudas y aprendizajes (junio de 2014). TRILCE. Recuperado 13 de marzo de 2022, de https://www.csic.edu.uy/sites/csic/files/libro_veinte_anos_de_politicas_de_investigacion_en_la_universidad_de_la_republica.pdf <br/>
