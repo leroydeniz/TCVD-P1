@@ -7,10 +7,8 @@ Universitat Oberta de Catalunya <br/>
 <details>
   <summary>Indice</summary>
   <ol>
-    <li>
-      <a href="#Descripción">Descripción</a>      
-    </li>
-    <li><a href="#Miembros-del-equipo">Miembros del equipo</a><li>
+    <li><a href="#Descripción">Descripción</a></li>
+    <li><a href="#Miembros-del-equipo">Miembros del equipo</a></li>
     <li><a href="#Ficheros-del-código-fuente">Ficheros del código fuente</a></li>
     <li><a href="#Recursos">Recursos</a></li>
     <li><a href="#Librerias">Librerias</a></li>
