@@ -77,7 +77,13 @@ El script hace uso de las siguientes librerias:
   from bs4 import BeautifulSoup
   ```
  * time
+ ```sh
+import time
+```
  * os.path
+ ```sh
+import os.path
+```
 
 ## Ejecución
 gem install github-markup
