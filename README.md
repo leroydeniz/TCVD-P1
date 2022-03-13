@@ -80,8 +80,9 @@ import os.path
 ```
 
 ## Ejecución
-gem install github-markup
-
+```sh
+python app.py
+```
 
 ## Licencia
 
