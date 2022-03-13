@@ -41,13 +41,18 @@ El script se debe ejecutar de la siguiente manera
   ```sh
   import random
   ```
- * requests.
-  Para instalar la libreria
+ * requests
   ```sh
-  python -m pip install requests
+  import requests
   ```
  * pandas
+  ```sh
+  import pandas as pd
+  ```
  * BeautifulSoup
+  ```sh
+  from bs4 import BeautifulSoup
+  ```
  * time
  * os.path
 
