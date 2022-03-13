@@ -42,18 +42,12 @@ El proyecto se estructura de la siguiente manera: <br/>
 **TCVD-P1/utils.py:** Contiene las funciones reiterativas necesarias y accesibles desde app.py
 
 ## Recursos
-• Bianco, M., & Sutz, J. (2014). Veinte años de políticas de investigación en la Universidad de la
-República. Aciertos, dudas y aprendizajes (junio de 2014). TRILCE. Recuperado 13 de marzo de
-2022, de https://www.csic.edu.uy/sites/csic/files/libro_veinte_anos_de_politicas_de_investigacion_en_la_universidad_de_la_republica.pdf <br/>
-• Creative Commons. (s. f.). Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
-Recuperado 13 de marzo de 2022, de https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES <br/>
-• García Nieto, J. (2018, septiembre 15). Licencias Creative Commons explicadas para dummies
-[Blog]. GENBETA. https://www.genbeta.com/herramientas/licencias-creative-commonsexplicadas-para-dummies <br/>
-• Lawson, R. (2015). Web Scraping with Python. Packt Publishing Ltd. Chapter 2. Scraping the
-Data.<br/>
+• Bianco, M., & Sutz, J. (2014). Veinte años de políticas de investigación en la Universidad de la República. Aciertos, dudas y aprendizajes (junio de 2014). TRILCE. Recuperado 13 de marzo de 2022, de https://www.csic.edu.uy/sites/csic/files/libro_veinte_anos_de_politicas_de_investigacion_en_la_universidad_de_la_republica.pdf <br/>
+• Creative Commons. (s. f.). Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Recuperado 13 de marzo de 2022, de https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES <br/>
+• García Nieto, J. (2018, septiembre 15). Licencias Creative Commons explicadas para dummies [Blog]. GENBETA. https://www.genbeta.com/herramientas/licencias-creative-commonsexplicadas-para-dummies <br/>
+• Lawson, R. (2015). Web Scraping with Python. Packt Publishing Ltd. Chapter 2. Scraping the Data.<br/>
 • Masip, D. El lenguaje Python. Editorial UOC.</br>
-• Simon Munzert, Christian Rubba, Peter Meißner, Dominic Nyhuis. (2015). Automated Data
-Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley & Sons. <br/>
+• Simon Munzert, Christian Rubba, Peter Meißner, Dominic Nyhuis. (2015). Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley & Sons. <br/>
 • Subirats, L., Calvo, M. (2018). Web Scraping. Editorial UOC.<br/>
 • Tutorial de Github https://guides.github.com/activities/hello-world.
 
@@ -91,4 +85,4 @@ gem install github-markup
 
 ## Licencia
 
- licencia CC-BY-ND 4.0
+ Realased UNder CC-BY-ND 4.0 Licence
