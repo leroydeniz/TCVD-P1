@@ -11,7 +11,7 @@ Universitat Oberta de Catalunya <br/>
       <a href="#Descripción">Descripción</a>      
     </li>
     <li>
-      <a href="#Miembros del equipo">Miembros del equipo</a>
+      <a href="#Miembros-del-equipo">Miembros del equipo</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
