@@ -8,7 +8,7 @@ Universitat Oberta de Catalunya <br/>
   <summary>Indice</summary>
   <ol>
     <li>
-      <a href="##Descripción">Descripción</a>
+      <a href="#Descripción">Descripción</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
