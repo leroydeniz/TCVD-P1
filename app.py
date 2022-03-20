@@ -4,6 +4,7 @@ import pandas as pd # para manejo de dataframes
 from bs4 import BeautifulSoup
 from utils import *
 import time
+from tqdm import tqdm
 
 # Años donde buscar la información, 2010 se excluye por falta de datos
 years = [2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
@@ -15,8 +16,9 @@ df = pd.DataFrame(columns = ['Title', 'Link', 'Description', 'Image', 'Year', 'P
 projects = []
 
 # Procesa año a año
-for year in years:
-    print(f"Processing: {year}")
+print(f" > Processing editions by year")
+
+for year in tqdm(years):
 
     # Hará variar el tiempo de respuesta
     t0 = time.time()
@@ -32,7 +34,7 @@ for year in years:
     response_delay = time.time() - t0
     
     # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
-    time.sleep(4 * response_delay)
+    time.sleep(0 * response_delay)
 
     # Obtener la información de cada url a visitar para tomar los datos
     soup = BeautifulSoup(page.content, "html.parser")
@@ -50,10 +52,12 @@ for year in years:
         print(e)
         pass
 
+# Indica el número de proyecto que está evaluando
+count = 0
 
 # Rascar la información de cada uno de los proyectos partiendo del enlace
-for project in projects:
-    print(f"\tProcessing: {project[0]}")
+print(f" > Processing projects")
+for project in tqdm(projects):
     
     # Hará variar el tiempo de respuesta
     t0 = time.time()
@@ -63,7 +67,7 @@ for project in projects:
     response_delay = time.time() - t0
     
     # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
-    time.sleep(6 * response_delay)
+    time.sleep(0 * response_delay)
 
     soup = BeautifulSoup(page.content, "html.parser")
 
@@ -80,7 +84,7 @@ for project in projects:
         
     try:
         image_path = soup.div(class_='post-content')[0].p.a['href'].strip()
-        p_image = load_requests(image_path).strip()
+        p_image = load_requests(image_path, count).strip()
     except Exception as e:
         p_image = None
         
@@ -91,6 +95,8 @@ for project in projects:
 
     # Añadir la nueva fila al dataframe
     df = df.append({'Title': p_title, 'Link': project[0], 'Description': p_description, 'Image': p_image, 'Year': project[1], 'Published': p_pub_date}, ignore_index=True)
+
+    count += 1
 
 # Crea el fichero CSV en el directorio output-
 df.to_csv('output/paies.csv')

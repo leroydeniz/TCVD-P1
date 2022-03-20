@@ -5,13 +5,24 @@ import os.path
 import random
 
 
+
+
 # Función para obtener la imagen de una URL
-def load_requests(source_url):
+def load_requests(source_url, id):
     r = requests.get(source_url, stream = True)
     if r.status_code == 200:
+
+        # Separar la urle /: ['http:', '', 'www.estudiantes.csic.edu.uy', 'wp-content', 'uploads', '2015', '09', '32114scr_654aa682ea813a1195.jpg']
         aSplit = source_url.split('/')
-        if verify_extension(aSplit[len(aSplit)-1]):
-            ruta = "img/"+aSplit[len(aSplit)-1]
+
+        # Tomar el nombre del fichero 
+        filename = aSplit[len(aSplit)-1]
+
+        _, ext = os.path.splitext(filename)
+        if verify_extension(ext):
+
+            # Separar el nombre del fichero de imagen: ['32114scr_654aa682ea813a1195', 'jpg']
+            ruta = f"img/{id}{ext}"
             output = open(ruta,"wb")
             for chunk in r:
                 output.write(chunk)
@@ -21,9 +32,8 @@ def load_requests(source_url):
 
 
 # Función para verificar la extensión de la imagen
-def verify_extension(name):
-    _, extension = os.path.splitext(name)
-    if extension in ['.png', '.jpg', '.jpeg', '.webp', '.svg', '.gif']:
+def verify_extension(ext):
+    if ext in ['.png', '.jpg', '.jpeg', '.webp', '.svg', '.gif']:
         return True
     return False
 
