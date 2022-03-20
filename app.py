@@ -34,7 +34,7 @@ for year in tqdm(years):
     response_delay = time.time() - t0
     
     # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
-    time.sleep(0 * response_delay)
+    time.sleep(4 * response_delay)
 
     # Obtener la información de cada url a visitar para tomar los datos
     soup = BeautifulSoup(page.content, "html.parser")
@@ -67,7 +67,7 @@ for project in tqdm(projects):
     response_delay = time.time() - t0
     
     # Demora la siguiente llamada 10 veces el tiempo de respuesta inicial
-    time.sleep(0 * response_delay)
+    time.sleep(6 * response_delay)
 
     soup = BeautifulSoup(page.content, "html.parser")
 
