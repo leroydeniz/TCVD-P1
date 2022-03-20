@@ -22,7 +22,7 @@ for year in tqdm(years):
 
     # Hará variar el tiempo de respuesta
     t0 = time.time()
-    
+      
     try:
         # A través de f-strings parametrizar la consulta para tomar cada una de las ediciones de los proyectos
         page = requests.get(f'https://www.estudiantes.csic.edu.uy/category/proyectos-aprobados/proyectos-{year}/', headers = {'User-Agent': get_header()})
@@ -51,7 +51,7 @@ for year in tqdm(years):
     except Exception as e:
         print(e)
         pass
-
+    
 # Indica el número de proyecto que está evaluando
 count = 0
 
@@ -93,11 +93,13 @@ for project in tqdm(projects):
     except Exception as e:
         p_pub_date = None
 
+    # Sustituir las commas por otro símbolo para facilitar la lectura del
+    #df = df.applymap(lambda x: x.replace(',', ''))
     # Añadir la nueva fila al dataframe
     df = df.append({'Title': p_title, 'Link': project[0], 'Description': p_description, 'Image': p_image, 'Year': project[1], 'Published': p_pub_date}, ignore_index=True)
 
     count += 1
 
 # Crea el fichero CSV en el directorio output-
-df.to_csv('output/paies.csv')
+df.to_csv('output/paies.csv', na_rep='N/A')
 print(df)
