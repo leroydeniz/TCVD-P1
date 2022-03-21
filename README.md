@@ -79,6 +79,10 @@ Los campos que se han almacenado son los siguientes:
 * **Year:** edición del proyecto donde fue financiado.
 * **Published:** año en que se publica en la página web desde donde se extrae.
 
+
+## Datos obtenidos
+Los campos que se han almacenado son los siguientes: https://drive.google.com/file/d/1s683pp9m6HkGn_OhgFpkDGbqwwJ4js9L/view?usp=sharing
+
 ## Recursos
 * Bianco, M., & Sutz, J. (2014). Veinte años de políticas de investigación en la Universidad de la República. Aciertos, dudas y aprendizajes (junio de 2014). TRILCE. Recuperado 13 de marzo de 2022, de https://www.csic.edu.uy/sites/csic/files/libro_veinte_anos_de_politicas_de_investigacion_en_la_universidad_de_la_republica.pdf <br/>
 * Creative Commons. (s. f.). Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0). Recuperado 13 de marzo de 2022, de https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES <br/>
