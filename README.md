@@ -79,8 +79,6 @@ Los campos que se han almacenado son los siguientes:
 * **Year:** edición del proyecto donde fue financiado.
 * **Published:** año en que se publica en la página web desde donde se extrae.
 
-
-## Datos obtenidos
 Los campos que se han almacenado son los siguientes: https://drive.google.com/file/d/1s683pp9m6HkGn_OhgFpkDGbqwwJ4js9L/view?usp=sharing
 
 ## Recursos
