@@ -13,6 +13,7 @@ Universitat Oberta de Catalunya <br/>
     <li><a href="#Librerias">Librerias</a></li>
     <li><a href="#Ejecución">Ejecución</a></li>
     <li><a href="#Datos-Obtenidos">Datos obtenidos</a></li>
+    <li><a href="#Video">Video</a></li>
     <li><a href="#Recursos">Recursos</a></li>
     <li><a href="#Licencia">Licencia</a></li>
   </ol>
@@ -79,7 +80,9 @@ Los campos que se han almacenado son los siguientes:
 * **Year:** edición del proyecto donde fue financiado.
 * **Published:** año en que se publica en la página web desde donde se extrae.
 
-Los campos que se han almacenado son los siguientes: https://drive.google.com/file/d/1s683pp9m6HkGn_OhgFpkDGbqwwJ4js9L/view?usp=sharing
+## Video
+El video se ha alojado en el siguiente enlace:
+https://drive.google.com/file/d/1s683pp9m6HkGn_OhgFpkDGbqwwJ4js9L/view?usp=sharing
 
 ## Recursos
 * Bianco, M., & Sutz, J. (2014). Veinte años de políticas de investigación en la Universidad de la República. Aciertos, dudas y aprendizajes (junio de 2014). TRILCE. Recuperado 13 de marzo de 2022, de https://www.csic.edu.uy/sites/csic/files/libro_veinte_anos_de_politicas_de_investigacion_en_la_universidad_de_la_republica.pdf <br/>
